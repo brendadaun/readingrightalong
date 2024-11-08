@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>American Girl Doll Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="browse.html">Book Vibes</a>
+        <a href="quizzes.html">Quizzes</a>
+    </nav>
+  <h1>Which American Girl Doll Are You?</h1>
+  <form id="AmericanGirlQuiz">
+    
+    <!-- Question 1 -->
+    <div class="question">
+      <p><b>What’s your favorite activity?</b></p>
+      <label><input type="radio" name="q1" value="A"> Exploring the outdoors and nature</label><br>
+      <label><input type="radio" name="q1" value="B"> Practicing arts and crafts</label><br>
+      <label><input type="radio" name="q1" value="C"> Reading or journaling</label><br>
+      <label><input type="radio" name="q1" value="D"> Learning about history and culture</label><br>
+      <label><input type="radio" name="q1" value="E"> Spending time with family and friends</label><br>
+      <label><input type="radio" name="q1" value="F"> Cooking or baking new recipes</label>
+    </div>
+    
+    <!-- Question 2 -->
+    <div class="question">
+      <p><b>How would you describe your style?</b></p>
+      <label><input type="radio" name="q2" value="A"> Practical and outdoorsy</label><br>
+      <label><input type="radio" name="q2" value="B"> Colorful and creative</label><br>
+      <label><input type="radio" name="q2" value="C"> Classic and timeless</label><br>
+      <label><input type="radio" name="q2" value="D"> Traditional and modest</label><br>
+      <label><input type="radio" name="q2" value="E"> Warm and homey</label><br>
+      <label><input type="radio" name="q2" value="F"> Chic and polished</label>
+    </div>
+    
+    <!-- Question 3 -->
+    <div class="question">
+      <p><b>What’s most important to you?</b></p>
+      <label><input type="radio" name="q3" value="A"> Protecting the environment</label><br>
+      <label><input type="radio" name="q3" value="B"> Expressing my creativity</label><br>
+      <label><input type="radio" name="q3" value="C"> Education and learning</label><br>
+      <label><input type="radio" name="q3" value="D"> Honoring my heritage</label><br>
+      <label><input type="radio" name="q3" value="E"> Building strong relationships</label><br>
+      <label><input type="radio" name="q3" value="F"> Staying determined and hardworking</label>
+    </div>
+    
+    <!-- Question 4 -->
+    <div class="question">
+      <p><b>If you could go on an adventure, where would you go?</b></p>
+      <label><input type="radio" name="q4" value="A"> Hiking in a forest or mountains</label><br>
+      <label><input type="radio" name="q4" value="B"> Visiting a bustling city</label><br>
+      <label><input type="radio" name="q4" value="C"> Exploring a library or museum</label><br>
+      <label><input type="radio" name="q4" value="D"> Traveling back in time</label><br>
+      <label><input type="radio" name="q4" value="E"> Visiting family and friends in a new place</label><br>
+      <label><input type="radio" name="q4" value="F"> Touring a historical landmark</label>
+    </div>
+    
+    <!-- Question 5 -->
+    <div class="question">
+      <p><b>What’s your ideal pet?</b></p>
+      <label><input type="radio" name="q5" value="A"> A horse</label><br>
+      <label><input type="radio" name="q5" value="B"> A kitten</label><br>
+      <label><input type="radio" name="q5" value="C"> A dog</label><br>
+      <label><input type="radio" name="q5" value="D"> A bird</label><br>
+      <label><input type="radio" name="q5" value="E"> A rabbit</label><br>
+      <label><input type="radio" name="q5" value="F"> No pets, just friends and family</label>
+    </div>
+
+    <br>
+    
+    <button type="button" onclick="calculateResult()">See Your Result</button>
+  </form>
+  
+  <div id="result"></div>
+  <script src="actions.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    text-align: left;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+body {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    background-color: #f8e8d0;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+/* Grid Layout */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four cards per row */
+    gap: 1rem;
+}
+
+/* Card Flip Styles */
+.card {
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20pt;
+}
+
+/* Front of Card */
+.card-front {
+    background-color: rgb(143, 182, 182);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(253, 251, 251, 0.1);
+
+}
+
+/* Back of Card */
+.card-back {
+    background-color: rgb(229, 171, 77);
+    transform: rotateY(180deg);
+    flex-direction: column;
+    backface-visibility: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img{
+    width: 15rem; /* Set the desired width for all images */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 1rem;
+    margin-bottom: 1rem; /* Space between the image and text */
+    border-radius: 5px; /* Optional: rounded edges for the image */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1100px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row on smaller screens */
+    }
+}
+
+a{
+    text-align: center;
+    text-decoration-line:overline;
+    color: teal;
+    
+}
+
+footer{
+    text-align: left;
+}
+
+h1, h2{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: teal;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    text-align: left;
+    margin: 1rem;
+}
+
+.large-img {
+    width: 30rem; /* Specific width for this image */
+    height: auto; /* Maintain aspect ratio */
+   border-radius: 2rem;
+
+}
+
+.flex-container {
+    display: flex; /* Enables flexbox */
+    gap: 1rem; /* Optional: adds space between columns */
+}
+.column {
+    flex: 1; /* Distributes space evenly among columns */
+    padding: 1rem;
+    margin-left: 1rem;
+    text-align: justify;
+}
+
+button{
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: rgb(30, 150, 150);color:white;}

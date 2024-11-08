@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Which March Sister Are You?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="browse.html">Book Vibes</a>
+        <a href="quizzes.html">Quizzes</a>
+    </nav>
+  
+  <h1>Which March Sister Are You?</h1>
+  <form id="MarchSistersQuiz">
+    
+    <!-- Question 1 -->
+    <div class="question">
+      <p><b>How would you spend a perfect day?</b></p>
+      <label><input type="radio" name="q1" value="A"> Hosting a tea party and spending time with loved ones</label><br>
+      <label><input type="radio" name="q1" value="B"> Writing stories and letting my imagination run wild</label><br>
+      <label><input type="radio" name="q1" value="C"> Practicing my favorite hobbies in a cozy corner at home</label><br>
+      <label><input type="radio" name="q1" value="D"> Visiting a museum or sketching something beautiful</label>
+    </div>
+    
+    <!-- Question 2 -->
+    <div class="question">
+      <p><b>What's most important to you in life?</b></p>
+      <label><input type="radio" name="q2" value="A"> Creating a warm, happy home</label><br>
+      <label><input type="radio" name="q2" value="B"> Achieving my dreams and making a difference</label><br>
+      <label><input type="radio" name="q2" value="C"> Helping others and spreading kindness</label><br>
+      <label><input type="radio" name="q2" value="D"> Finding beauty in the world and expressing myself</label>
+    </div>
+    
+    <!-- Question 3 -->
+    <div class="question">
+      <p><b>How would you describe your fashion sense?</b></p>
+      <label><input type="radio" name="q3" value="A"> Classic and elegant – I like to look put-together</label><br>
+      <label><input type="radio" name="q3" value="B"> Simple and practical – comfort is key!</label><br>
+      <label><input type="radio" name="q3" value="C"> Soft and modest – I don’t need much to feel at ease</label><br>
+      <label><input type="radio" name="q3" value="D"> Bold and trendy – I love trying new styles!</label>
+    </div>
+    
+    <!-- Question 4 -->
+    <div class="question">
+      <p><b>Which activity sounds most fun to you?</b></p>
+      <label><input type="radio" name="q4" value="A"> Planning an event or gathering</label><br>
+      <label><input type="radio" name="q4" value="B"> Writing or reading a fantastic story</label><br>
+      <label><input type="radio" name="q4" value="C"> Playing music or volunteering</label><br>
+      <label><input type="radio" name="q4" value="D"> Drawing, painting, or visiting a gallery</label>
+    </div>
+    
+    <!-- Question 5 -->
+    <div class="question">
+      <p><b>How would your friends describe you?</b></p>
+      <label><input type="radio" name="q5" value="A"> Responsible, kind, and supportive</label><br>
+      <label><input type="radio" name="q5" value="B"> Ambitious, passionate, and loyal</label><br>
+      <label><input type="radio" name="q5" value="C"> Gentle, caring, and selfless</label><br>
+      <label><input type="radio" name="q5" value="D"> Artistic, determined, and a bit dramatic</label>
+    </div>
+    
+    <!-- Question 6 -->
+    <div class="question">
+      <p><b>What’s your biggest flaw?</b></p>
+      <label><input type="radio" name="q6" value="A"> Sometimes I worry too much about others' opinions</label><br>
+      <label><input type="radio" name="q6" value="B"> I can be stubborn and headstrong</label><br>
+      <label><input type="radio" name="q6" value="C"> I’m too shy and avoid the spotlight</label><br>
+      <label><input type="radio" name="q6" value="D"> I sometimes come across as self-centered</label>
+    </div>
+    
+    <!-- Question 7 -->
+    <div class="question">
+      <p><b>What kind of future do you dream of?</b></p>
+      <label><input type="radio" name="q7" value="A"> A stable life with family and security</label><br>
+      <label><input type="radio" name="q7" value="B"> A life of freedom and adventure</label><br>
+      <label><input type="radio" name="q7" value="C"> A simple, peaceful life with loved ones</label><br>
+      <label><input type="radio" name="q7" value="D"> A life of luxury, beauty, and success</label>
+    </div>
+    
+    <!-- Question 8 -->
+    <div class="question">
+      <p><b>If you could have a superpower, what would it be?</b></p>
+      <label><input type="radio" name="q8" value="A"> Healing others with a touch</label><br>
+      <label><input type="radio" name="q8" value="B"> Time travel to explore different eras</label><br>
+      <label><input type="radio" name="q8" value="C"> Speaking to animals and understanding their needs</label><br>
+      <label><input type="radio" name="q8" value="D"> Turning anything I touch into art</label>
+    </div>
+
+    <br>
+    
+    <button type="button" onclick="calculateResult()">See Your Result</button>
+  </form>
+  
+  <div id="result"></div>
+  <script src="actions.js"></script>
+</body>
+</html>

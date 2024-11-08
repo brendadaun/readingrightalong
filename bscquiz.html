@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Babysitter's Club Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="browse.html">Book Vibes</a>
+        <a href="quizzes.html">Quizzes</a>
+    </nav>
+  <h1>Which Babysitter’s Club Member Are You?</h1>
+  <form id="BabysittersQuiz">
+    
+    <!-- Question 1 -->
+    <div class="question">
+      <p><b>What’s your ideal way to spend a Saturday afternoon?</b></p>
+      <label><input type="radio" name="q1" value="A"> Getting creative with some art or crafts</label><br>
+      <label><input type="radio" name="q1" value="B"> Organizing a fun group activity</label><br>
+      <label><input type="radio" name="q1" value="C"> Diving into a new book</label><br>
+      <label><input type="radio" name="q1" value="D"> Playing sports or getting active</label><br>
+      <label><input type="radio" name="q1" value="E"> Hanging out with friends</label><br>
+      <label><input type="radio" name="q1" value="F"> Writing a story or drawing</label><br>
+      <label><input type="radio" name="q1" value="G"> Practicing a new dance routine or exercise</label>
+    </div>
+    
+    <!-- Question 2 -->
+    <div class="question">
+      <p><b>How would your friends describe you?</b></p>
+      <label><input type="radio" name="q2" value="A"> Artistic and free-spirited</label><br>
+      <label><input type="radio" name="q2" value="B"> Responsible and a born leader</label><br>
+      <label><input type="radio" name="q2" value="C"> Thoughtful and a bit shy</label><br>
+      <label><input type="radio" name="q2" value="D"> Confident and outgoing</label><br>
+      <label><input type="radio" name="q2" value="E"> Friendly and caring</label><br>
+      <label><input type="radio" name="q2" value="F"> Creative and introspective</label><br>
+      <label><input type="radio" name="q2" value="G"> Dedicated and talented</label>
+    </div>
+    
+    <!-- Question 3 -->
+    <div class="question">
+      <p><b>What’s your go-to outfit?</b></p>
+      <label><input type="radio" name="q3" value="A"> Something unique that expresses my creativity</label><br>
+      <label><input type="radio" name="q3" value="B"> A classic and polished look</label><br>
+      <label><input type="radio" name="q3" value="C"> Comfy and casual</label><br>
+      <label><input type="radio" name="q3" value="D"> Sporty and functional</label><br>
+      <label><input type="radio" name="q3" value="E"> Fun and colorful</label><br>
+      <label><input type="radio" name="q3" value="F"> Comfortable with a touch of flair</label><br>
+      <label><input type="radio" name="q3" value="G"> Simple, but always ready for movement</label>
+    </div>
+    
+    <!-- Question 4 -->
+    <div class="question">
+      <p><b>What’s your dream job?</b></p>
+      <label><input type="radio" name="q4" value="A"> An artist or fashion designer</label><br>
+      <label><input type="radio" name="q4" value="B"> A business leader or entrepreneur</label><br>
+      <label><input type="radio" name="q4" value="C"> A writer or librarian</label><br>
+      <label><input type="radio" name="q4" value="D"> An athlete or coach</label><br>
+      <label><input type="radio" name="q4" value="E"> A teacher or counselor</label><br>
+      <label><input type="radio" name="q4" value="F"> An author or illustrator</label><br>
+      <label><input type="radio" name="q4" value="G"> A professional dancer</label>
+    </div>
+    
+    <!-- Question 5 -->
+    <div class="question">
+      <p><b>If you were planning a group activity for your friends, what would it be?</b></p>
+      <label><input type="radio" name="q5" value="A"> A DIY arts and crafts night</label><br>
+      <label><input type="radio" name="q5" value="B"> A well-organized movie or game night</label><br>
+      <label><input type="radio" name="q5" value="C"> A quiet book club meet-up</label><br>
+      <label><input type="radio" name="q5" value="D"> A sports day or outdoor adventure</label><br>
+      <label><input type="radio" name="q5" value="E"> A volunteer project or trip to the animal shelter</label><br>
+      <label><input type="radio" name="q5" value="F"> A story-writing or drawing contest</label><br>
+      <label><input type="radio" name="q5" value="G"> A fun dance-off or talent show</label>
+    </div>
+
+    <br>
+    
+    <button type="button" onclick="calculateResult()">See Your Result</button>
+  </form>
+  
+  <div id="result"></div>
+  <script src="actions.js"></script>
+</body>
+</html>
